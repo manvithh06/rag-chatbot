@@ -6,7 +6,7 @@ not from the LLM's training data.
 
 ## Live Demo
 
-🔗 [Try it here](https://your-streamlit-url.streamlit.app)
+🔗 [Try it here](https://rag-chatbot-376hj7kwh4wfrkajlvwg43.streamlit.app/)
 
 ## How It Works
 
