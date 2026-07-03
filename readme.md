@@ -48,21 +48,8 @@ Random Forest, SVMs, Reinforcement Learning, GANs, Transfer Learning.
 > I don't have information about that in my knowledge base. 
 > My knowledge base covers Machine Learning topics only.
 
-## Setup Steps
 
-```bash
-git clone https://github.com/manvithh06/rag-chatbot.git
-cd rag-chatbot
-pip install -r requirements.txt
 
-# Step 1: Build vector store (run once)
-python ingest.py
-
-# Step 2: Launch chatbot
-streamlit run app.py
-```
-
-Add your Groq API key in the sidebar (free at console.groq.com).
 
 ## Screenshots
 
