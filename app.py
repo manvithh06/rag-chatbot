@@ -7,11 +7,7 @@ import streamlit as st
 import os
 from rag_engine import RAGEngine
 
-# Auto-rebuild vector store if it doesn't exist (e.g. fresh deployment)
-if not os.path.exists("chroma_db") or len(os.listdir("chroma_db")) == 0:
-    import subprocess
-    import sys
-    subprocess.run([sys.executable, "ingest.py"], check=True)
+
 
 # ── Page config ────────────────────────────────────────────
 st.set_page_config(
