@@ -5,3 +5,4 @@ groq==0.9.0
 wikipedia-api==0.6.0
 langchain-text-splitters==0.2.2
 httpx==0.27.0
+numpy==1.26.4
