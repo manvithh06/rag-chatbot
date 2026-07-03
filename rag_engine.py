@@ -5,7 +5,7 @@ Query → embed → retrieve → prompt → generate → return with sources.
 
 import os
 import chromadb
-from chromadb.utils import embedding_functions
+from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 from groq import Groq
 
 # ── Configuration ─────────────────────────────────────────
@@ -38,9 +38,7 @@ class RAGEngine:
         # Load embedding function — same model used during ingestion
         # WHY same model: query and document embeddings must be in the same
         # vector space. Mixing models breaks semantic search.
-        self.ef = embedding_functions.SentenceTransformerEmbeddingFunction(
-            model_name=EMBEDDING_MODEL
-        )
+        self.ef = SentenceTransformerEmbeddingFunction(model_name=EMBEDDING_MODEL)
         
         # Connect to persisted ChromaDB
         self.client = chromadb.PersistentClient(path=CHROMA_PATH)
